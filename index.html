@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Book List</h1>
+        <form class="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" name="title" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" name="author" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN #</label>
+                <input type="text" class="form-control" name="isbn" id="isbn">
+            </div>
+            <div>
+                <input type="submit" class="btn btn-info btn-block" value="Add Book">
+                <input type="reset" class="btn btn-primary btn-block" value="Clear Fields">
+            </div>
+        </form>
+
+        <div class="book-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN #</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="book-list">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
