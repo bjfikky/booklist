@@ -47,6 +47,7 @@ class UI {
             <td><a class="btn btn-small btn-danger delete">X</a></td>
             `;
         bookList.appendChild(row);
+        this.clearFields();
     }
 
     static submitBook = (event) => {
@@ -64,6 +65,12 @@ class UI {
         if (element.classList.contains('delete')) {
             element.parentElement.parentElement.remove();
         }
+    }
+
+    static clearFields = () => {
+        document.querySelector('#title').value = '';
+        document.querySelector('#author').value = '';
+        document.querySelector('#isbn').value = '';
     }
 }
 
